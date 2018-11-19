@@ -1,0 +1,17 @@
+api {
+  base = "https://your.discourse.forum"
+  key = "your API key"
+  username = "SomeUsername"
+  timeout = 5 seconds
+}
+
+category = "Some Category Name"
+
+# (0.0 - 1.0) Minimum proportion of recent topics by same author before domination warning is applied
+domination_threshold = 0.33
+
+# No action will be taken until a minimum of this number of topics have been added to the category
+min_topics = 20
+
+poll_interval = 60 seconds
+initial_error_backoff_interval = 60 seconds
