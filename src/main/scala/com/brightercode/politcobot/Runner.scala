@@ -55,7 +55,7 @@ object Runner extends App with LoopHelper {
           if (!latestTopic.topicPostBookmarked) {
             logger.info(s"Domination detected on $latestTopic. Adding bookmark and creating warning post")
             forum.bookmark(latestTopic.id)
-            forum.postDominationWarning(latestTopic.id, categoryName, topicsByAuthor, topics.size)
+            forum.postDominationWarning(latestTopic.id, category, topicsByAuthor, topics.size)
           } else {
             logger.debug(s"Domination detected on $latestTopic. Taking no action as already bookmarked")
           }
